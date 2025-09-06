@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { font-family: Arial, sans-serif; background: #f5f6fa; color: #333; }
+
+/* Layout */
+.app-shell { display: flex; min-height: 100vh; }
+.sidebar { width: 220px; background: #0b1220; color: #eee; padding: 20px; }
+.sidebar h2 { font-size: 18px; margin-bottom: 20px; }
+.sidebar nav a, .sidebar nav button {
+  display: block; padding: 8px; margin-bottom: 6px;
+  border-radius: 4px; text-decoration: none; color: #ccc;
+}
+.sidebar nav a.active, .sidebar nav a:hover, .sidebar nav button:hover {
+  background: #1e293b; color: #fff;
+}
+.content { flex: 1; display: flex; flex-direction: column; }
+.topbar { background: #fff; padding: 12px 20px; border-bottom: 1px solid #ddd; }
+.main { flex: 1; padding: 20px; }
+
+/* Cards */
+.card { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 16px; margin-bottom: 16px; }
+.email-card { display: flex; justify-content: space-between; gap: 12px; }
+.email-meta { text-align: right; }
+
+/* Badges */
+.badge { padding: 2px 6px; border-radius: 4px; font-size: 12px; display: inline-block; }
+.badge.urgent { background: #fee2e2; color: #b91c1c; }
+.badge.normal { background: #e5e7eb; color: #374151; }
+.badge.positive { background: #dcfce7; color: #166534; }
+.badge.neutral { background: #fef9c3; color: #854d0e; }
+.badge.negative { background: #fee2e2; color: #b91c1c; }
+
+/* Inputs */
+input, select, button { padding: 6px 10px; border: 1px solid #ccc; border-radius: 4px; }
+button { cursor: pointer; background: #0b5fff; color: white; border: none; }
+button:hover { opacity: 0.9; }
