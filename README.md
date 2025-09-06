@@ -128,10 +128,11 @@ Open browser: http://localhost:5173
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard Screenshot](./assets/ss1.png)
+![Dashboard Screenshot](./src/assets/ss1.png)
 
 ### Email View
-![Email View Screenshot](./assets/ss2.png)
+![Email View Screenshot](./src/assets/ss2.png)
+
 
 
 👨‍💻 Contributors
