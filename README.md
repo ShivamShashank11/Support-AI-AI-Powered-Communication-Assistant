@@ -133,5 +133,6 @@ Open browser: http://localhost:5173
 👨‍💻 Contributors
 Shivam Shashank
 
-Team / Individual Hackathon Submission
+
+Individual Hackathon Submission
 ```
