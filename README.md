@@ -125,11 +125,15 @@ cd frontend
 npm run dev
 Open browser: http://localhost:5173
 
+## 📸 Screenshots
+
 ### Dashboard
-![Dashboard Screenshot](https://raw.githubusercontent.com/username/my-project/main/src/assets/ss1.png)
+![Dashboard Screenshot](https://raw.githubusercontent.com/ShivamShashank11/support-ai/main/src/assets/ss1.png)
 
 ### Email View
-![Email View Screenshot](https://raw.githubusercontent.com/username/my-project/main/src/assets/ss2.png)
+![Email View Screenshot](https://raw.githubusercontent.com/ShivamShashank11/support-ai/main/src/assets/ss2.png)
+
+
 
 
 👨‍💻 Contributors
