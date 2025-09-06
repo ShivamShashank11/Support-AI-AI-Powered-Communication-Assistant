@@ -125,6 +125,13 @@ cd frontend
 npm run dev
 Open browser: http://localhost:5173
 
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard Screenshot](./assets/ss1.png)
+
+### Email View
+![Email View Screenshot](./assets/ss2.png)
 
 
 👨‍💻 Contributors
