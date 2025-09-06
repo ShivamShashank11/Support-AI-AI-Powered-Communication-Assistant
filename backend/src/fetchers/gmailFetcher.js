@@ -1,4 +1,4 @@
-// src/fetchers/gmailFetcher.js
+
 const imaps = require("imap-simple");
 const { simpleParser } = require("mailparser");
 const Email = require("../models/Email");
@@ -37,11 +37,11 @@ async function fetchEmails() {
       const bodyText = parsed.text || "";
       const date = parsed.date || new Date();
 
-      // filter keywords
+     
       const combined = `${subject} ${bodyText}`.toLowerCase();
       if (!FILTER_KEYWORDS.some(k => combined.includes(k))) continue;
 
-      // save to DB if not already present
+      
       const exists = await Email.findOne({ messageId: parsed.messageId });
       if (exists) continue;
 
@@ -54,7 +54,7 @@ async function fetchEmails() {
         isFiltered: true,
       });
 
-      // Queue job for background processing
+     
       await addEmailJob(saved._id.toString(), "normal");
 
       console.log("Saved & queued new email:", subject);

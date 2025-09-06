@@ -2,6 +2,9 @@
 const express = require("express");
 const router = express.Router();
 
+const sampleLoader = require("./sampleLoader");
+router.use("/sample", sampleLoader);
+
 const Email = require("../models/Email");
 const { fetchEmails } = require("../fetchers/gmailFetcher");
 const { processPendingFilteredEmails } = require("../controllers/batchProcessor");
